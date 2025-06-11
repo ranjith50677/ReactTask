@@ -1,0 +1,47 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  animation: backgroundShift 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  /* color: white; */
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
